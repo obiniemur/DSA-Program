@@ -1,2 +1,2 @@
 # DSA-Program
-Data Structure and Algorithms Challenges
+This repository holds all my problem solving code during my DSA class.

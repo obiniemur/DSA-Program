@@ -1,0 +1,35 @@
+HOW TO DETERMINE THE FIRST DIGIT IN A NUMBER?
+
+#include<stdio.h>
+int main()
+{
+
+    int num;
+    scanf("%d", &num);
+    int mainNum = num / 1000;
+    if(mainNum % 2 == 0){
+        printf("EVEN");
+    }else{
+        printf("ODD");
+    }
+    return 0;
+}
+
+
+*********************************************Key questions regarding the above code (focus on the input; they require a 4-digit input)***************************************
+
+Given a number X. Print "EVEN" if the first digit of X is an even number. Otherwise, print "ODD".
+
+For instance: In 4569, the first digit is 4, the second digit is 5, the third digit is 6, and the fourth digit is 9.
+
+Input
+Only one line containing a number X (999 < X ≤ 9999)
+
+Output
+If the first digit is even, print "EVEN"; otherwise, print "ODD".
+
+
+
+*********************************
+To identify a digit, we must always examine the input.
+If there are 4 digits, we can divide the entire number by 1000 to eliminate the last 3 digits. We can divide by 100 to remove the last two digits, and we can divide by 10 to discard the last digit.
